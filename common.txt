@@ -12,6 +12,12 @@ struct Stack<T> {
     }
 }
 
+
+for i in 0..<12{
+
+   print("\(i)")
+}
+
 var stk = Stack<Int>()
 
 stk.push(1)
@@ -24,3 +30,4 @@ for item in stk.items {
     print("\(item)", terminator: " ")
 }
 print()
+
