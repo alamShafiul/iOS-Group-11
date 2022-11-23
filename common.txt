@@ -1,0 +1,26 @@
+struct Stack<T> {
+    var items: [T] = []
+
+    mutating func push(_ item: T) {
+        items.append(item)
+    }
+    mutating func pop() -> T {
+        return items.removeLast()
+    }
+    mutating func top() -> T {
+        return items[items.count-1]
+    }
+}
+
+var stk = Stack<Int>()
+
+stk.push(1)
+stk.push(2)
+stk.push(3)
+stk.push(4)
+stk.pop()
+
+for item in stk.items {
+    print("\(item)", terminator: " ")
+}
+print()
