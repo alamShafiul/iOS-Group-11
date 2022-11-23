@@ -8,8 +8,7 @@ struct Stack<T> {
         return items.removeLast()
     }
     mutating func top() -> T {
-	var x = items[items.index(items.startIndex)]
-        return x
+        return items[items.count-1]
     }
   
 }
