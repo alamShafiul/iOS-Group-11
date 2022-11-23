@@ -11,6 +11,7 @@ struct Stack<T> {
 	var x = items[items.index(items.startIndex)]
         return x
     }
+  
 }
 
 var stk = Stack<Int>()
@@ -22,7 +23,6 @@ stk.push(4)
 stk.push(5)
 stk.push(10)
 stk.pop()
-
 for item in stk.items {
     print("\(item)", terminator: " ")
 }
