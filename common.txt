@@ -31,3 +31,10 @@ for item in stk.items {
 }
 print()
 
+for i in 0..<12{
+
+
+ print("conflict here")
+}
+
+// add new lines
