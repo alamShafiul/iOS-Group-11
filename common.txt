@@ -1,5 +1,5 @@
 struct Stack<T> {
-    var items: [T] = []
+    var it: [T] = []
 
     mutating func push(_ item: T) {
         items.append(item)
@@ -8,7 +8,8 @@ struct Stack<T> {
         return items.removeLast()
     }
     mutating func top() -> T {
-        return items[items.count-1]
+	print("check")
+        return it[items.count-1]
     }
 }
 
