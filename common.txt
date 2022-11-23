@@ -10,6 +10,7 @@ struct Stack<T> {
     mutating func top() -> T {
 	var x = items[items.index(items.startIndex)]
         return x
+	return 0
     }
   
 }
